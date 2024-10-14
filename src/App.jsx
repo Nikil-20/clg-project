@@ -1,16 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.js
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import StudentSearch from "./Component/StudentSearch";
+import Navbar from "./Component/Navbar";
+import Results from "./Component/Results";
+import About from "./Component/About";
+import Services from "./Component/Services";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     <div> hello from coep college </div>
-    </>
-  )
+    <Router>
+      <div>
+        <Navbar />
+        <main className="p-4">
+          <Routes>
+            <Route path="/" element={<StudentSearch />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services/>}/>
+            <Route path="/results" element={<Results/>} />
+
+           
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
