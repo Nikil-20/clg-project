@@ -376,8 +376,8 @@ const students = [
     {
         misNo: "112105020",
         studentName: "GAJANKUSH NIKIL VIJAY",
-        sgpa: 7.39,
-        cgpa: 5.66,
+        sgpa: 8.39,
+        cgpa: 6.66,
         subjects: {
             codes: [
                 "Industrial Psychology",
@@ -393,7 +393,7 @@ const students = [
                 "Environmental Studies"
             ],
             grades: ["BB", "CC", "BB", "BB", "BC", "CC", "AB", "BB", "BB", "AB", "PP"],
-            pointers: ["8", "6", "8", "8", "7", "6", "9", "8", "8", "9", "10"]
+            pointers: ["8", "9", "8", "8", "9", "6", "9", "8", "8", "9", "10"]
         }
     },
     {
