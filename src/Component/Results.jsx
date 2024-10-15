@@ -75,19 +75,19 @@ function Results() {
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center p-4 sm:p-6"
-      style={{ backgroundImage: `url(college_42b626c32aa4436806a3282d3c6469b5.jpg)` }}
+      style={{ backgroundImage: `url(http://portal.coep.org.in:9093/content/img/college_42b626c32aa4436806a3282d3c6469b5.jpg)` }} // Updated image URL
     >
       <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl bg-white bg-opacity-90 p-4 md:p-6 mt-5 rounded-lg shadow-md text-center animate__animated animate__fadeInDown animate__slow 2s">
         <div className="mb-4">
           <h1 className="text-center">
-            <img src="coep_logoBlack.png" alt="COEP" className="mx-auto w-20 md:w-24 lg:w-28" />
+            <img src="http://portal.coep.org.in:9093/Images/coep_logoBlack.png" alt="COEP" className="mx-auto w-20 md:w-24 lg:w-28" />
           </h1>
           <h2 className="text-lg md:text-xl lg:text-2xl font-semibold">
             COEP Technological University
           </h2>
         </div>
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
-        Student Information
+          Student Information
         </h1>
         <div className="mb-4">
           <input
@@ -123,7 +123,8 @@ function Results() {
               width="100%" // Set the skeleton to take full width
               className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2" // Make the width responsive
               height={20} // Adjust the height of each skeleton block for a cleaner look
-            />          </div>
+            />
+          </div>
         ) : (
           result && (
             <div id="result" className="mt-4 p-4 border border-gray-300 rounded bg-gray-50">

@@ -21,7 +21,7 @@ function Navbar() {
           <div className="flex-shrink-0">
             <img
               className="h-14 w-14"
-              src="coep_logoBlack.png"
+              src="http://portal.coep.org.in:9093/Images/coep_logoBlack.png"  // Updated logo URL
               alt="COEP Logo"
             />
           </div>

@@ -39,9 +39,9 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-cover bg-center" style={{ backgroundImage: "url('college_42b626c32aa4436806a3282d3c6469b5.jpg')" }}>
-      <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow-lg border-2 border-gray-400  animate__animated animate__fadeInDown animate__slow 2s" style={{ width: '500px' }}>
-        <h1 className="text-3xl font-bold text-center mb-3">COEP Technological University</h1> {/* Added h1 here */}
+    <div className="flex items-center justify-center h-screen bg-cover bg-center" style={{ backgroundImage: "url('http://portal.coep.org.in:9093/content/img/college_42b626c32aa4436806a3282d3c6469b5.jpg')" }}>
+      <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow-lg border-2 border-gray-400 animate__animated animate__fadeInDown animate__slow 2s" style={{ width: '500px' }}>
+        <h1 className="text-3xl font-bold text-center mb-3">COEP Technological University</h1>
         <h2 className="text-2xl font-bold mb-5 text-center">Login</h2>
 
         <Formik
@@ -104,7 +104,6 @@ const Login = () => {
           <a href="#" className="text-blue-500">Forgot Password</a>
         </div>
 
-        {/* Added the new line here */}
         <p className="text-center text-red-500 font-semibold">
           If you want to see the result, login here
         </p>
