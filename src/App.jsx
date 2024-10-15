@@ -6,6 +6,8 @@ import Navbar from "./Component/Navbar";
 import Results from "./Component/Results";
 import About from "./Component/About";
 import Services from "./Component/Services";
+import OtpPage from "./Component/otp";
+import AdmissionsPage from "./Component/AdmissionsPage";
 
 function App() {
   return (
@@ -15,9 +17,12 @@ function App() {
         <main className="p-4">
           <Routes>
             <Route path="/" element={<StudentSearch />} />
+            <Route path="/otp" element={<OtpPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services/>}/>
+            <Route path="/admissionspage" element={<AdmissionsPage />} />
             <Route path="/results" element={<Results/>} />
+
 
            
           </Routes>

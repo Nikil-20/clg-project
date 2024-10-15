@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   const handleLinkClick = () => {
-    setIsMobileMenuOpen(false); 
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -29,31 +29,31 @@ function Navbar() {
           <div className="hidden md:flex ml-10 items-baseline space-x-4">
             <Link
               to="/"
-              onClick={handleLinkClick}  
+              onClick={handleLinkClick}
               className="text-gray-700 hover:bg-black hover:text-white px-3 py-2 rounded-md text-lg font-medium"
             >
               Home
             </Link>
             <Link
               to="/About"
-              onClick={handleLinkClick}  
-              className="text-gray-700  hover:bg-black hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+              onClick={handleLinkClick}
+              className="text-gray-700 hover:bg-black hover:text-white px-3 py-2 rounded-md text-lg font-medium"
             >
               About
             </Link>
             <Link
               to="/Services"
-              onClick={handleLinkClick}  
-              className="text-gray-700  hover:bg-black hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+              onClick={handleLinkClick}
+              className="text-gray-700 hover:bg-black hover:text-white px-3 py-2 rounded-md text-lg font-medium"
             >
               Campus
             </Link>
             <Link
-              to="/Results"
-              onClick={handleLinkClick}  
-              className="text-gray-700  hover:bg-black hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+              to="/AdmissionsPage"
+              onClick={handleLinkClick}
+              className="text-gray-700 hover:bg-black hover:text-white px-3 py-2 rounded-md text-lg font-medium"
             >
-               Results
+              Academics
             </Link>
           </div>
           {/* Mobile Menu Button */}
@@ -61,9 +61,13 @@ function Navbar() {
             <button
               onClick={handleMobileMenuToggle}
               aria-label="Open mobile menu"
-              className="text-gray-700  hover:bg-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
             >
-              <i className="fa fa-bars"></i>
+              <img
+                src="https://w7.pngwing.com/pngs/508/394/png-transparent-hamburger-button-computer-icons-menu-number-list-angle-text-rectangle.png"
+                alt="Menu Icon"
+                className="h-6 w-6"
+              />
             </button>
           </div>
         </div>
@@ -73,33 +77,31 @@ function Navbar() {
         <div className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             to="/"
-            onClick={handleLinkClick}  
+            onClick={handleLinkClick}
             className="text-gray-700 hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Home
           </Link>
           <Link
             to="/About"
-            onClick={handleLinkClick}  
-            className="text-gray-700  hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            onClick={handleLinkClick}
+            className="text-gray-700 hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             About
           </Link>
           <Link
             to="/Services"
-            onClick={handleLinkClick}  
-            className="text-gray-700  hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            onClick={handleLinkClick}
+            className="text-gray-700 hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Campus
           </Link>
           <Link
-            to="/Results
-"
-            onClick={handleLinkClick}  
-            className="text-gray-700  hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            to="/AdmissionsPage"
+            onClick={handleLinkClick}
+            className="text-gray-700 hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Results
-
+            Academics
           </Link>
         </div>
       )}
